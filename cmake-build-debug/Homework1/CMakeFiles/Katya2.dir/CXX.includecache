@@ -1,0 +1,26 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+C:/hw1/Katya2/Homework1/HWfunctions.cpp
+HWfunctions.h
+C:/hw1/Katya2/Homework1/HWfunctions.h
+
+C:/hw1/Katya2/Homework1/HWfunctions.h
+iostream
+-
+fstream
+-
+cmath
+-
+exception
+-
+
+C:/hw1/Katya2/Homework1/mainHW.cpp
+HWfunctions.h
+C:/hw1/Katya2/Homework1/HWfunctions.h
+
