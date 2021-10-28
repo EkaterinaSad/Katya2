@@ -1,6 +1,5 @@
 #include "functions.h"
 
-
 /* clill*/
 Answer firstVar(Point* input, int n)
 {
