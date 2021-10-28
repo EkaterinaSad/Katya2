@@ -1,7 +1,7 @@
 #include "HWfunctions.h"
 
 
-
+/* clill*/
 Answer firstVar(Point* input, int n)
 {
     /* расстояние d = x*cos(a) + b*sin(a) ; x,y - точка, cos(a), sin(a) - компоненты нормали 
