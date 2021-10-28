@@ -14,8 +14,6 @@ struct Answer
     Point left;
     Point right;        
 };
-
 Answer firstVar(Point* input, int n);
-
 Point* readFile(char* path, int& n);
 
