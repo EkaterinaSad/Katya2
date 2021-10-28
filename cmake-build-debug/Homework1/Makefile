@@ -116,25 +116,25 @@ depend:
 .PHONY : depend
 
 # Convenience name for target.
-Homework1/CMakeFiles/Katya2.dir/rule:
-	cd /d C:\hw1\Katya2\cmake-build-debug && $(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 Homework1/CMakeFiles/Katya2.dir/rule
-.PHONY : Homework1/CMakeFiles/Katya2.dir/rule
+Homework1/CMakeFiles/homework1.dir/rule:
+	cd /d C:\hw1\Katya2\cmake-build-debug && $(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 Homework1/CMakeFiles/homework1.dir/rule
+.PHONY : Homework1/CMakeFiles/homework1.dir/rule
 
 # Convenience name for target.
-Katya2: Homework1/CMakeFiles/Katya2.dir/rule
-.PHONY : Katya2
+homework1: Homework1/CMakeFiles/homework1.dir/rule
+.PHONY : homework1
 
 # fast build rule for target.
-Katya2/fast:
-	cd /d C:\hw1\Katya2\cmake-build-debug && $(MAKE) $(MAKESILENT) -f Homework1\CMakeFiles\Katya2.dir\build.make Homework1/CMakeFiles/Katya2.dir/build
-.PHONY : Katya2/fast
+homework1/fast:
+	cd /d C:\hw1\Katya2\cmake-build-debug && $(MAKE) $(MAKESILENT) -f Homework1\CMakeFiles\homework1.dir\build.make Homework1/CMakeFiles/homework1.dir/build
+.PHONY : homework1/fast
 
 HWfunctions.obj: HWfunctions.cpp.obj
 .PHONY : HWfunctions.obj
 
 # target to build an object file
 HWfunctions.cpp.obj:
-	cd /d C:\hw1\Katya2\cmake-build-debug && $(MAKE) $(MAKESILENT) -f Homework1\CMakeFiles\Katya2.dir\build.make Homework1/CMakeFiles/Katya2.dir/HWfunctions.cpp.obj
+	cd /d C:\hw1\Katya2\cmake-build-debug && $(MAKE) $(MAKESILENT) -f Homework1\CMakeFiles\homework1.dir\build.make Homework1/CMakeFiles/homework1.dir/HWfunctions.cpp.obj
 .PHONY : HWfunctions.cpp.obj
 
 HWfunctions.i: HWfunctions.cpp.i
@@ -142,7 +142,7 @@ HWfunctions.i: HWfunctions.cpp.i
 
 # target to preprocess a source file
 HWfunctions.cpp.i:
-	cd /d C:\hw1\Katya2\cmake-build-debug && $(MAKE) $(MAKESILENT) -f Homework1\CMakeFiles\Katya2.dir\build.make Homework1/CMakeFiles/Katya2.dir/HWfunctions.cpp.i
+	cd /d C:\hw1\Katya2\cmake-build-debug && $(MAKE) $(MAKESILENT) -f Homework1\CMakeFiles\homework1.dir\build.make Homework1/CMakeFiles/homework1.dir/HWfunctions.cpp.i
 .PHONY : HWfunctions.cpp.i
 
 HWfunctions.s: HWfunctions.cpp.s
@@ -150,7 +150,7 @@ HWfunctions.s: HWfunctions.cpp.s
 
 # target to generate assembly for a file
 HWfunctions.cpp.s:
-	cd /d C:\hw1\Katya2\cmake-build-debug && $(MAKE) $(MAKESILENT) -f Homework1\CMakeFiles\Katya2.dir\build.make Homework1/CMakeFiles/Katya2.dir/HWfunctions.cpp.s
+	cd /d C:\hw1\Katya2\cmake-build-debug && $(MAKE) $(MAKESILENT) -f Homework1\CMakeFiles\homework1.dir\build.make Homework1/CMakeFiles/homework1.dir/HWfunctions.cpp.s
 .PHONY : HWfunctions.cpp.s
 
 mainHW.obj: mainHW.cpp.obj
@@ -158,7 +158,7 @@ mainHW.obj: mainHW.cpp.obj
 
 # target to build an object file
 mainHW.cpp.obj:
-	cd /d C:\hw1\Katya2\cmake-build-debug && $(MAKE) $(MAKESILENT) -f Homework1\CMakeFiles\Katya2.dir\build.make Homework1/CMakeFiles/Katya2.dir/mainHW.cpp.obj
+	cd /d C:\hw1\Katya2\cmake-build-debug && $(MAKE) $(MAKESILENT) -f Homework1\CMakeFiles\homework1.dir\build.make Homework1/CMakeFiles/homework1.dir/mainHW.cpp.obj
 .PHONY : mainHW.cpp.obj
 
 mainHW.i: mainHW.cpp.i
@@ -166,7 +166,7 @@ mainHW.i: mainHW.cpp.i
 
 # target to preprocess a source file
 mainHW.cpp.i:
-	cd /d C:\hw1\Katya2\cmake-build-debug && $(MAKE) $(MAKESILENT) -f Homework1\CMakeFiles\Katya2.dir\build.make Homework1/CMakeFiles/Katya2.dir/mainHW.cpp.i
+	cd /d C:\hw1\Katya2\cmake-build-debug && $(MAKE) $(MAKESILENT) -f Homework1\CMakeFiles\homework1.dir\build.make Homework1/CMakeFiles/homework1.dir/mainHW.cpp.i
 .PHONY : mainHW.cpp.i
 
 mainHW.s: mainHW.cpp.s
@@ -174,7 +174,7 @@ mainHW.s: mainHW.cpp.s
 
 # target to generate assembly for a file
 mainHW.cpp.s:
-	cd /d C:\hw1\Katya2\cmake-build-debug && $(MAKE) $(MAKESILENT) -f Homework1\CMakeFiles\Katya2.dir\build.make Homework1/CMakeFiles/Katya2.dir/mainHW.cpp.s
+	cd /d C:\hw1\Katya2\cmake-build-debug && $(MAKE) $(MAKESILENT) -f Homework1\CMakeFiles\homework1.dir\build.make Homework1/CMakeFiles/homework1.dir/mainHW.cpp.s
 .PHONY : mainHW.cpp.s
 
 # Help Target
@@ -185,7 +185,7 @@ help:
 	@echo ... depend
 	@echo ... edit_cache
 	@echo ... rebuild_cache
-	@echo ... Katya2
+	@echo ... homework1
 	@echo ... HWfunctions.obj
 	@echo ... HWfunctions.i
 	@echo ... HWfunctions.s

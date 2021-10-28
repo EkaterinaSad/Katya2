@@ -116,17 +116,17 @@ depend:
 .PHONY : depend
 
 #=============================================================================
-# Target rules for targets named Katya2
+# Target rules for targets named homework1
 
 # Build rule for target.
-Katya2: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 Katya2
-.PHONY : Katya2
+homework1: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 homework1
+.PHONY : homework1
 
 # fast build rule for target.
-Katya2/fast:
-	$(MAKE) $(MAKESILENT) -f Homework1\CMakeFiles\Katya2.dir\build.make Homework1/CMakeFiles/Katya2.dir/build
-.PHONY : Katya2/fast
+homework1/fast:
+	$(MAKE) $(MAKESILENT) -f Homework1\CMakeFiles\homework1.dir\build.make Homework1/CMakeFiles/homework1.dir/build
+.PHONY : homework1/fast
 
 # Help Target
 help:
@@ -136,7 +136,7 @@ help:
 	@echo ... depend
 	@echo ... edit_cache
 	@echo ... rebuild_cache
-	@echo ... Katya2
+	@echo ... homework1
 .PHONY : help
 
 

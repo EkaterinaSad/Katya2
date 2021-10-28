@@ -1,6 +1,6 @@
 #include "HWfunctions.h"
 
-////////////////////// 2ND HW ///////////////////////
+
 
 Answer firstVar(Point* input, int n)
 {
@@ -10,7 +10,6 @@ Answer firstVar(Point* input, int n)
     double sin = -input[0].x/sqrt(input[0].x*input[0].x + input[0].y*input[0].y);
     double cos = input[0].y/sqrt(input[0].x*input[0].x + input[0].y*input[0].y);
 
-    
     double maxRight = 0;
     Point maxRightPoint{0,0};
 
@@ -34,36 +33,6 @@ Answer firstVar(Point* input, int n)
     }
 
     return Answer {maxLeftPoint, maxRightPoint};
-}
-
-Answer secondVar(Point* in, int n)
-{
-    double cos = in[0].x/sqrt(in[0].x*in[0].x + in[0].y*in[0].y);
-    double sin = in[0].y/sqrt(in[0].x*in[0].x + in[0].y*in[0].y);
-    
-    double maxRight = 1;
-    Point maxRightPoint{0,0};
-
-    double maxLeft = 1;
-    Point maxLeftPoint{0,0};
-
-    for( int i = 1; i < n; i++)
-    {
-        double temp = in[i].x*sin + in[i].y*(-cos);
-        double cs = (in[i].x*cos + in[i].y*sin)/sqrt(in[i].x*in[i].x + in[i].y*in[i].y);
-
-        if(cs <= maxRight && temp >= 0)
-        {
-            maxRight = cs;
-            maxRightPoint = in[i];   
-        }
-        else if(cs <= maxLeft && temp < 0)
-        {
-            maxLeft = cs;
-            maxLeftPoint = in[i];
-        }
-    }
-    return Answer{maxLeftPoint, maxRightPoint};
 }
 
 Point* readFile(char* path, int& n)
@@ -100,36 +69,3 @@ Point* readFile(char* path, int& n)
     }    
 }
 
-
-
-///////////////////// 1ST HW /////////////////////
-
-
-using namespace std;
-int factorial(int n){
-    if(n > 1)
-        return n*factorial(n-1);
-    else if(n < 0)
-        cout << "Иди учи гамма функцию Эйлера";
-    else
-        return 1;
-} 
-
-int C_n_k(int n, int k){
-    return factorial(n)/(factorial(k)*factorial(n-k));
-}
-
-double** funcValue(double x0, double xmax, double st, int& size, double (*fnc)(double))
-{
-    size = (xmax - x0)/st;
-    double* x = new double[size]; 
-    double* y = new double[size];
-
-    for (int i = 0; i < size; i++)
-    {
-        x[i] = x0 + i*st;
-        y[i] = fnc(x0 + i*st);
-    }
-
-    return new double*[2]{x, y};
-}
