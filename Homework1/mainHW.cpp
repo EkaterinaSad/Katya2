@@ -1,4 +1,4 @@
-#include "HWfunctions.h"
+#include "functions.h"
 
 using namespace std;
 
