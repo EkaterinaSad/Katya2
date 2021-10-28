@@ -1,3 +1,0 @@
-"C:\Program Files\JetBrains\CLion 2021.2.2\bin\cmake\win\bin\cmake.exe" -E rm -f CMakeFiles\Katya2.dir/objects.a
-C:\mingv\mingw64\bin\ar.exe cr CMakeFiles\Katya2.dir/objects.a @CMakeFiles\Katya2.dir\objects1.rsp
-C:\mingv\mingw64\bin\g++.exe -g -Wl,--whole-archive CMakeFiles\Katya2.dir/objects.a -Wl,--no-whole-archive -o Katya2.exe -Wl,--out-implib,libKatya2.dll.a -Wl,--major-image-version,0,--minor-image-version,0 @CMakeFiles\Katya2.dir\linklibs.rsp

@@ -1,5 +1,0 @@
-C:/hw1/Katya2/cmake-build-debug/CMakeFiles/edit_cache.dir
-C:/hw1/Katya2/cmake-build-debug/CMakeFiles/rebuild_cache.dir
-C:/hw1/Katya2/cmake-build-debug/Homework1/CMakeFiles/homework1.dir
-C:/hw1/Katya2/cmake-build-debug/Homework1/CMakeFiles/edit_cache.dir
-C:/hw1/Katya2/cmake-build-debug/Homework1/CMakeFiles/rebuild_cache.dir
