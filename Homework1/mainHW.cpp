@@ -9,8 +9,8 @@ int main()
     Point* points = readFile("in.txt", n);
     Answer res = firstVar(points, n);
 
-    cout << "max left: " << res.left.x << ' ' << res.left.y << '\n' <<
-            "max right: " <<  res.right.x << ' ' << res.right.y << endl;
+    cout << "Leftmost: " << res.left.x << ' ' << res.left.y << '\n' <<
+            "Rightmost: " <<  res.right.x << ' ' << res.right.y << endl;
 
     delete points;
 
