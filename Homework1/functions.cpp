@@ -1,35 +1,37 @@
 #include "functions.h"
 
 /* clill*/
-Answer firstVar(Point* input, int n)
+Answer firstVar(Point* in, int n)
 {
-    double sin = -input[0].x/sqrt(input[0].x*input[0].x + input[0].y*input[0].y);
-    double cos = input[0].y/sqrt(input[0].x*input[0].x + input[0].y*input[0].y);
+    double cos = in[0].x/sqrt(in[0].x*in[0].x + in[0].y*in[0].y);
+    double sin = in[0].y/sqrt(in[0].x*in[0].x + in[0].y*in[0].y);
 
-    double maxRight = 0;
+    double maxRight = 1;
     Point maxRightPoint{0,0};
 
-    double maxLeft = 0;
+    double maxLeft = 1;
     Point maxLeftPoint{0,0};
 
-    for (int i = 1; i < n; i++)
+    for( int i = 1; i < n; i++)
     {
-        double dist = input[i].x*cos + input[i].y*sin;
+        double temp = in[i].x*sin + in[i].y*(-cos);
+        double cs = (in[i].x*cos + in[i].y*sin)/sqrt(in[i].x*in[i].x + in[i].y*in[i].y);
 
-        if (dist > maxRight)
+        if(cs <= maxRight && temp >= 0)
         {
-            maxRight = dist;
-            maxRightPoint = input[i];
+            maxRight = cs;
+            maxRightPoint = in[i];
         }
-        else if (dist <= maxLeft)
+        else if(cs <= maxLeft && temp < 0)
         {
-            maxLeft = dist;
-            maxLeftPoint = input[i];
+            maxLeft = cs;
+            maxLeftPoint = in[i];
         }
     }
-
-    return Answer {maxLeftPoint, maxRightPoint};
+    return Answer{maxLeftPoint, maxRightPoint};
 }
+
+
 
 Point* readFile(char* path, int& n)
 {   
