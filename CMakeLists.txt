@@ -5,3 +5,4 @@ project ("Katya2")
 
 
 add_subdirectory ("Homework1")
+add_subdirectory ("homework2")
