@@ -1,4 +1,4 @@
-
+/*
 #include <iostream>
 #include <fstream>
 #include <string>
@@ -58,8 +58,8 @@ int main()
 	cout << endl;
 }
 
+*/
 
-/*
 
 #include <iostream>
 #include <fstream>
@@ -190,4 +190,4 @@ int main(int argc, char** argv) {
     return 1;
 }
 
-*/
+
