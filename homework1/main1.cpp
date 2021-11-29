@@ -39,12 +39,12 @@ int main()
 		double ang = acos(cos_val) * 180 / PI;
 		if (z_val <= 0) ang = -ang;
 		//cout << ang << " ("<<x[i]<<","<<y[i]<<")\n";
-		if (angr > ang) {
+		if (angr >= ang) {
 			angr = ang;
 			xr = x;
 			yr = y;
 		}
-		if (angl < ang) {
+		if (angl <= ang) {
 			angl = ang;
 			xl = x;
 			yl = y;
