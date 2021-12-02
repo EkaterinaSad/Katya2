@@ -1,6 +1,5 @@
 
-
-
+#include <iostream>
 #include <fstream>
 #include <string>
 #include <sstream>
@@ -58,11 +57,6 @@ int main()
 	cout << "Rightmost: " <<  xr << " " << yr << "\n";
 	cout << endl;
 }
-
-
-
-
-
 
 
 
