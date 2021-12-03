@@ -4,12 +4,8 @@
 #include <string>
 #include <sstream>
 #include <cmath>
-
 using namespace std;
-
-
 const double PI = atan(1) * 4;
-
 int main()
 {
     double x0, y0; // базовый вектор (1й в списке)
@@ -17,17 +13,9 @@ int main()
     string line;
     ifstream infile=ifstream();
     ofstream outfile = ofstream();
-    //stringstream ss;
-    //infile.open("input1.txt", ios_base::in);
-    //outfile.open("input1/out.txt", ios::out | ios::trunc);
-    //infile.open("on_line/in.txt", ios::in);
-    //outfile.open("on_line/out.txt", ios::out | ios::trunc);
     infile.open("in.txt", ios::in);
-
-
     infile >> x0;
     infile >> y0;
-
     bool finished = false;
     //cout << "x0=" << x0 << " y0=" << y0<<endl;
     int N = 0;
@@ -60,19 +48,7 @@ int main()
             xl = x;
             yl = y;
         }
-        // вывод всех подозрительных результатов
-        //if ((x == -2) && (y == 6))
-        //	printf("%g %g %.12f\n", x, y, ang);
-        //if ((x == -3) && (y == 9))
-        //	printf("%g %g %.12f\n", x, y, ang);
-/*
-        if ((x == 3) && (y == -3))
-            printf("%g %g %.12f\n", x, y, ang);
-        if ((x == 4) && (y == -4))
-            printf("%g %g %.12f\n", x, y, ang);
-
-        outfile << x << " " << y << " " << ang << endl;
-*/
+       
     }
     //cout << endl << endl;
     //cout << "Leftmost: " << angl << " (" << xl << "," << yl << ")\n";
