@@ -1,4 +1,3 @@
-
 #include <iostream>
 #include <fstream>
 #include <string>
@@ -33,16 +32,14 @@ int main()
         double z_val = x0 * y - y0 * x; // из векторного произведения
         /* от точности вычислений зависит правильный ответ */
         float ang = acos(cos_val) * 180.0 / PI; // "правильный" ответ
-        //double ang = acos(cos_val) * 180.0 / PI; // "неправильный" ответ
         if (z_val <= 0) ang = -ang;
-        //cout << ang << " ("<<x[i]<<","<<y[i]<<")\n";
-        //if (angr >= ang) {
+ 
         if ((angr - ang)>=0.0) {
             angr = ang;
             xr = x;
             yr = y;
         }
-        //if (angl <= ang) {
+        
         if ((angl - ang)<0.0) {
             angl = ang;
             xl = x;
@@ -50,9 +47,7 @@ int main()
         }
        
     }
-    //cout << endl << endl;
-    //cout << "Leftmost: " << angl << " (" << xl << "," << yl << ")\n";
-    //cout << "Rightmost: " << angr << " (" << xr << "," << yr << ")\n";
+    
     cout << "Leftmost: " <<  xl << " " << yl << "\n";
     cout << "Rightmost: " <<  xr << " " << yr << "\n";
     cout << endl;
