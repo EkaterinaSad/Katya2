@@ -9,6 +9,7 @@ int main()
 {
     double x0, y0; // базовый вектор (1й в списке)
     double *x, *y;
+    string line;
     ifstream infile=ifstream();
     ofstream outfile = ofstream();
     infile.open("in.txt", ios::in);
