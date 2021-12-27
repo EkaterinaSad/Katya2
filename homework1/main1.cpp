@@ -9,19 +9,18 @@ int main()
 {
     double x0, y0; // базовый вектор (1й в списке)
     double *x, *y;
-    string line;
     ifstream infile=ifstream();
     ofstream outfile = ofstream();
     infile.open("in.txt", ios::in);
     infile >> x0;
     infile >> y0;
-    bool finished = false;
+    //bool finished = false;
     //cout << "x0=" << x0 << " y0=" << y0<<endl;
     int N = 0;
     double angl = -0, angr = 0, xl = 0, xr = 0, yl = 0, yr = 0;
     double norm0 = sqrt(x0 * x0 + y0 * y0);
     outfile << x0 << " " << y0 << endl;
-    while (!finished && !infile.eof()) { // посчитаем к-во пар чисел оставшихся
+    while (/*!finished && !*/infile.eof()) { // посчитаем к-во пар чисел оставшихся
         double x, y;
         infile >> x;
         if (infile.eof()) break;
