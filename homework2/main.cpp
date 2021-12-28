@@ -40,9 +40,9 @@ int check_intersection(point *p, border curr_border) {
 void get_first_intersection(point *p, vector<border> borders, bool direction, int first_index) {
 	bool intersected = false;
 	int intersection_index;
-	if (direction) {
+	if (direction) {//движение вправо
 		for (int i = first_index; i < borders.size(); ++i) {
-			if (check_intersection(p, borders[i])) {
+			if (check_intersection(p, borders[i])) {//если произошло столкновение с преградой
 				intersected = true;
 				intersection_index = i - 1;
 				direction = !direction;
@@ -50,10 +50,10 @@ void get_first_intersection(point *p, vector<border> borders, bool direction, in
 			}
 		}
 	}
-	else {
+	else {//движение влево
 		for (int i = first_index; i >= 0; --i) {
 			
-			if (check_intersection(p, borders[i])) {
+			if (check_intersection(p, borders[i])) {//если произошло столкновение с преградой
 				intersected = true;
 				intersection_index = i + 1;
 				direction = !direction;
@@ -97,7 +97,7 @@ int main(int argc, char** argv) {
 		}
         
 	ifstream file(argv[1]);
-	if (file) {
+	if (file) {//файл открыт верно
 		point p;
 		vector<border> b;
 		border tempb;
@@ -105,21 +105,21 @@ int main(int argc, char** argv) {
 		float s;
 		int i = 0;
 		for (file >> s; !file.eof(); file >> s) {
-			if (i == 0) {
+			if (i == 0) {//первая строчка
 				p.x = 0;
 				p.y = s;
 			}
-			else if (i == 1) {
+			else if (i == 1) {//вторая строчка первое значение
 				p.vx = s;
 			}
-			else if (i == 2) {
+			else if (i == 2) {//вторая строчка второе значение
 				p.vy = s;
 			}
 			else {
-				if (i % 2 == 1) {
+				if (i % 2 == 1) {//n-я строчка первое значение
 					tempb.x = s;
 				}
-				else {
+				else {//n-я строчка второе значение
 					tempb.h = s;
 					b.push_back(tempb);
 
@@ -127,8 +127,8 @@ int main(int argc, char** argv) {
 			}
 			++i;
 		}
-		if (tempb.x != -1) {	
-			file >> s;	
+		if (tempb.x != -1) {	//если перегородки есть
+			file >> s;	//еще раз считываем значение, потому что в конце файла нет пробела
 			tempb.h = s;
 			b.push_back(tempb);
 		}
